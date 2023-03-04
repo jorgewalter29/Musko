@@ -23,7 +23,6 @@ body {
 /* Body */
 
 
-
 .grid__container {
     display: grid;
     gap: 10px;
@@ -58,7 +57,7 @@ footer {
 
 
 /* Config Header */
-header{
+header {
     height: 40px;
 }
 
@@ -88,7 +87,8 @@ header nav p {
 
 
 /* Config del Navbar */
-.checkbox, .icon {
+.checkbox,
+.icon {
     width: 24px;
     height: 24px;
     position: absolute;
@@ -102,6 +102,7 @@ header nav p {
     font-size: 24px;
 
 }
+
 .checkbox {
     opacity: 0;
 }
@@ -110,11 +111,11 @@ header nav p {
     display: none;
 }
 
-.checkbox:checked ~ .fi-rr-menu-burger {
+.checkbox:checked~.fi-rr-menu-burger {
     display: none;
 }
 
-.checkbox:checked ~ .fi-rr-cross {
+.checkbox:checked~.fi-rr-cross {
     display: block;
 }
 
@@ -150,7 +151,7 @@ a:hover {
 }
 
 
-.checkbox:checked ~ .menu {
+.checkbox:checked~.menu {
     top: 40px;
 }
 
@@ -212,25 +213,13 @@ a:hover {
 
 .div__footer h5 {
     display: none;
-    width: 50px;
-    height: 30px;
-    position: absolute;
-    align-items: center;
-    margin-left: 40rem;
-    padding: 2rem;
 }
 
-.div__footer h6 {
-    font-size: 18px;
-    width: 300px;
-    height: 30px;
-    position:relative;
-    text-align: center;
-    margin-left: 1rem;
-    padding: 0;
+.Encontranos {
+    display: none;
 }
 
-.menu-footer {
+.menu__footer li {
     display: none;
 }
 
@@ -239,18 +228,23 @@ a:hover {
     height: 80px;
     display: flex;
     position: absolute;
-    margin-left: 12rem;
+    right: 8rem;
     align-items: start;
 }
 
-.facebook, .instagram {
+.facebook,
+.instagram {
     background-color: transparent;
     width: 80px;
     height: 80px;
     border: 0;
     padding: 0;
+    margin-bottom: 20px;
 }
-.logos-redes, .facebook, .instagram  img {
+
+.logos-redes,
+.facebook,
+.instagram img {
     padding-bottom: 5px;
 
 }
@@ -260,37 +254,147 @@ a:hover {
     height: 70px;
     position: relative;
     margin-left: 1rem;
-    
+
 }
 
 .copy {
     width: 180px;
     height: 13px;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    padding-top: 0.2rem;
+    position: relative;
+    margin-left: 15px;
 }
+
 .copy h6 {
-    width: 158px;
-    height: 13px;
-    justify-content: start;
     font-size: 10px;
+    width: 180px;
+    height: 13px;
 }
 
 
 .copyrigth {
-width: 250px;
+    width: 250px;
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 720px) {
+
+    .img__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+
+    .pagos {
+        text-align: center;
+    }
+
+    .pagos h3 {
+        padding: 0;
+    }
+
+    .banner {
+        position: relative;
+        margin-left: 10rem;
+        width: 550px;
+    }
+
+    .div__footer h5 {
+        display: none;
+        position: absolute;
+        width: 200px;
+        height: 30px;
+        margin-left: 20rem;
+        margin-top: 0.3rem;
+    }
+
+    .Encontranos {
+        display: flex;
+        font-size: 18px;
+        width: 300px;
+        height: 30px;
+        position: absolute;
+        text-align: center;
+        margin-left: 35rem;
+        padding-top: 0.5rem;
+        
+    }
+
+
+    .facebook,
+    .instagram {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .logos-redes,
+    .facebook,
+    .instagram img {
+        padding-top: 6px;
+        margin: 0;
+
+    }
+
+    .instagram {
+        margin-top: 5px;
+    }
+
+
+
+    .Newsletter {
+        display: flex;
+        position: absolute;
+        padding-left: 16rem;
+        padding-top:9rem;
+    }
+
+    .Newsletter p {
+        display: none;
+    }
+
+
+    .email {
+        display: flex;
+        position: absolute;
+        width: 80px;
+        padding-left: 12rem;
+        padding-top:11.5rem;
+    }
     
+    .suscribite {
+        display: flex;
+        position: absolute;
+        width: 30px;
+        padding-left: 20rem;
+        padding-top:13.3rem;
+        font-size: 10PX;
+    }
+
 }
 
+
+@media screen and (min-width: 1140px) {
+    .Newsletter {
+        display: none;
+    }
+}
 
 
 /*PAGINA PRODUCTOS*/
+
+
+.menu__productos {
+    width: 130px;
+    position: absolute;
+    top: -250px;
+    right: 0px;
+    transition: 250ms;
+    z-index: 1;
+}
+
 
 .catalogo {
     display: flex;
