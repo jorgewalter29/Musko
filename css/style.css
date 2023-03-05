@@ -33,7 +33,6 @@ body {
         "footer";
 }
 
-
 header {
     grid-area: header;
     background-color: #3e566f;
@@ -49,12 +48,10 @@ main {
     background-color: aqua;
 }
 
-
 footer {
     grid-area: footer;
     background-color: blueviolet;
 }
-
 
 /* Config Header */
 header {
@@ -128,7 +125,6 @@ header nav p {
     z-index: 1;
 }
 
-
 li {
     display: block;
     text-align: start;
@@ -149,7 +145,6 @@ a:hover {
     background: rgb(232, 135, 10);
     color: rgb(240, 248, 255);
 }
-
 
 .checkbox:checked~.menu {
     top: 40px;
@@ -177,12 +172,9 @@ a:hover {
 /* Section 3 */
 
 
-
-
 .Newsletter {
     display: none;
 }
-
 
 .email {
     display: none;
@@ -190,10 +182,7 @@ a:hover {
 
 .suscribite {
     display: none;
-
 }
-
-
 
 .pagos {
     text-align: start;
@@ -271,10 +260,11 @@ a:hover {
     height: 13px;
 }
 
-
 .copyrigth {
     width: 250px;
 }
+
+
 
 @media screen and (min-width: 720px) {
 
@@ -287,7 +277,6 @@ a:hover {
         margin-top: 2rem;
     }
 
-
     .pagos {
         text-align: center;
     }
@@ -298,7 +287,7 @@ a:hover {
 
     .banner {
         position: relative;
-        margin-left: 10rem;
+        margin-left: 8rem;
         width: 550px;
     }
 
@@ -312,7 +301,7 @@ a:hover {
     }
 
     .Encontranos {
-        display: flex;
+        display: none;
         font-size: 18px;
         width: 300px;
         height: 30px;
@@ -320,35 +309,19 @@ a:hover {
         text-align: center;
         margin-left: 35rem;
         padding-top: 0.5rem;
-        
-    }
-
-
-    .facebook,
-    .instagram {
-        margin-bottom: 0;
-        padding: 0;
     }
 
     .logos-redes,
     .facebook,
     .instagram img {
-        padding-top: 6px;
-        margin: 0;
-
+        display: none;
     }
-
-    .instagram {
-        margin-top: 5px;
-    }
-
-
 
     .Newsletter {
         display: flex;
         position: absolute;
         padding-left: 16rem;
-        padding-top:9rem;
+        padding-top: 9rem;
     }
 
     .Newsletter p {
@@ -359,32 +332,150 @@ a:hover {
     .email {
         display: flex;
         position: absolute;
-        width: 80px;
-        padding-left: 12rem;
-        padding-top:11.5rem;
+        left: 190px;
+        margin-top: 180px;
     }
-    
+
     .suscribite {
         display: flex;
         position: absolute;
-        width: 30px;
-        padding-left: 20rem;
-        padding-top:13.3rem;
-        font-size: 10PX;
+        width: 40px;
+        right: 6rem;
+        padding-top: 11.3rem;
+        font-size: 14px;
     }
-
 }
 
 
 @media screen and (min-width: 1140px) {
+
+    .section2 {
+        height: 30vh;
+    }
+
+    .checkbox,
+    .icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        width: 700px;
+        top: 10px;
+        right: 5px;
+
+    }
+
+    a {
+        font-size: 13px;
+        height: 30px;
+        background-color: transparent;
+    }
+
     .Newsletter {
         display: none;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .suscribite {
+        display: none;
+
+    }
+
+    .pagos h3 {
+        margin-top: 550px;
+    }
+
+    .banner {
+        position: relative;
+        margin-left: 300px;
+        width: 600px;
+    }
+
+
+    .div__footer h5 {
+        display: flex;
+        margin-left: 450px;
+    }
+
+    .Encontranos {
+        display: flex;
+        right: 5px;
+    }
+
+    .menu__footer {
+        display: flex;
+        position: absolute;
+        left: 20rem;
+        margin-top: 2rem;
+    }
+
+    .menu__footer li {
+        display: block;
+    }
+
+    .menu__footer li a {
+        display: block;
+        font-size: 15px;
+    }
+
+    .facebook,
+    .instagram {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .logos-redes,
+    .facebook,
+    .instagram img {
+        display: flex;
+        padding-top: 6px;
+        margin: 0;
+
+    }
+
+    .instagram {
+        margin-top: 5px;
     }
 }
 
 
 /*PAGINA PRODUCTOS*/
 
+.checkbox,
+.icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-top: 10px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.icon {
+    pointer-events: none;
+    font-size: 24px;
+
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.fi-rr-cross {
+    display: none;
+}
+
+.checkbox:checked~.fi-rr-menu-burger {
+    display: none;
+}
+
+.checkbox:checked~.fi-rr-cross {
+    display: block;
+}
 
 .menu__productos {
     width: 130px;
@@ -394,6 +485,32 @@ a:hover {
     transition: 250ms;
     z-index: 1;
 }
+
+.menu__productos li {
+    display: block;
+    text-align: start;
+    list-style: none;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.menu__productos li a {
+    text-decoration: none;
+    background-color: #3e566f;
+    color: #ff8351;
+    display: block;
+    padding: 10px 6px;
+}
+
+.menu__productos li a:hover {
+    background: rgb(232, 135, 10);
+    color: rgb(240, 248, 255);
+}
+
+.checkbox:checked~.menu__productos{
+    top: 40px;
+}
+
 
 
 .catalogo {
@@ -408,8 +525,8 @@ a:hover {
     padding: .8em;
     background: #3e566f;
     position: relative;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -475,10 +592,40 @@ svg {
 
 
 
+@media screen and (min-width: 720px){
+    .card {
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+    
+}
 
 
+@media screen and (min-width: 1140px) {
+    .card {
+        width: 300px;
+        height: 350px;
+        margin-left: 55px;
+        margin-bottom: 30px;
+    }
 
+    .Newsletter__productos {
+        display: flex;
+        position: relative;
+        padding: 2rem 3rem;
+    }
+    
+    .Newsletter p {
+        display: flex;
+        position: relative;
+        margin: 50px 50px;
+    }
 
+    .pagos h3 {
+        margin-top: 10px;
+        padding: 0;
+    }
+}
 
 
 
