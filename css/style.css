@@ -38,30 +38,30 @@ body {
 
 header {
     grid-area: header;
-    background-color: #3e566f;
+    
 }
 
 nav {
     grid: navbar;
-    background-color: #1128c1;
+    
 }
 
 main {
     grid-area: main;
-    background-color: rgb(236, 144, 31);
+    
     padding: 20px;
 }
 
 footer {
     grid-area: footer;
-    background-color: blueviolet;
+    
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 30px;
     /* Ajusta la altura según sea necesario */
-    background-color: #4f41a2;
+    background-color: #9c90dd;
     text-align: center;
     padding-top: 20px;
 }
@@ -248,7 +248,7 @@ a:hover {
 }
 
 .maps {
-    width: 110px;
+    width: 90px;
     height: 70px;
     position: absolute;
     left: 1rem;
@@ -260,7 +260,7 @@ a:hover {
     display: flex;
     width: 180px;
     height: 13px;
-    left: 1rem;
+    left: 5rem;
 }
 
 .copy h6 {
@@ -294,6 +294,7 @@ a:hover {
         bottom: 0rem;
         left: 1rem;
     }
+
     .menu__footer {
         display: flex;
         justify-content: center;
@@ -384,10 +385,6 @@ a:hover {
 
 
 
-.Encontranos {
-    display: flex;
-    right: 5px;
-}
 
 .menu__footer {
     display: flex;
@@ -494,7 +491,9 @@ a:hover {
     top: 40px;
 }
 
-
+.section_productos {
+    margin-bottom: 100px;
+}
 
 .catalogo {
     display: flex;
@@ -576,13 +575,33 @@ svg {
     background-color: #ffcaa6;
 }
 
-.Newsletter__productos {
-    display: none;
-}
 
 footer {
-    height: 15vh;
+    height: 13vh;
 }
+
+.maps {
+    width: 110px;
+    height: 70px;
+    position: absolute;
+    left: 1rem;
+    bottom: 2rem;
+
+}
+
+.copy {
+    display: flex;
+    width: 180px;
+    height: 13px;
+    left: 1rem;
+}
+
+h6,
+    .copy {
+        position: absolute;
+        bottom: 0rem;
+        left: 1rem;
+    }
 
 
 @media screen and (min-width: 720px) {
@@ -591,23 +610,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .email {
-        display: none;
-        position: absolute;
-        margin-top: 0px;
-        padding: 0;
-    }
-
-    .suscribite {
-        display: none;
-        position: absolute;
-        margin-top: 2px;
-        margin-bottom: 10px;
-        padding: 0;
-    }
-
-
-    .logos-redes,
+    .logos,
     .facebook,
     .instagram img {
         display: flex;
@@ -626,35 +629,7 @@ footer {
         margin-bottom: 30px;
     }
 
-    .Newsletter__productos {
-        display: none;
-        color: aqua;
-        margin-left: 2rem;
-    }
-
-    .Newsletter__productos p {
-        display: none;
-        position: relative;
-        padding: 0rem 3rem;
-    }
-
-    .email {
-        display: none;
-        position: absolute;
-
-    }
-
-    .suscribite {
-        display: none;
-        position: absolute;
-
-    }
-
-
-    .pagos h3 {
-        margin-top: 10px;
-        padding: 0;
-    }
+    
 }
 
 
@@ -668,6 +643,8 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
 
 
 
@@ -718,4 +695,11 @@ textarea {
 
 #boton:hover {
     cursor: pointer;
+}
+
+
+/*Carrito*/
+
+.main_container {
+    height: 70%;
 }
