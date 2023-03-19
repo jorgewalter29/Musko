@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Seymour One', 'Aboreto', cursive, sans-serif;
+}
+
+body {
+    background-image: url(https://fondosmil.com/fondo/32202.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Body */
+
+
+.grid__container {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    /* Ajusta la altura según sea necesario */
+    background-color: #9c90dd;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* Config Header */
+
+/* Config del Navbar */
+
+
+
+.header_container {
+    height: 40px;
+    width: 100%;
+
+    nav {
+        height: 40px;
+        display: flex;
+        justify-content: start;
+        position: relative;
+
+        h1 {
+            color: chartreuse;
+            text-align: start;
+            position: absolute;
+            font-size: 30px;
+            padding-left: 2rem;
+        }
+
+        p {
+            text-align: start;
+            position: absolute;
+            padding-left: 6rem;
+            top: 2.0rem;
+            font-size: 12px;
+        }
+    }
+}
+
+/* Menu Hamburguesa*/
+
+.checkbox,
+.icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.icon {
+    pointer-events: none;
+    font-size: 24px;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.fi-rr-cross {
+    display: none;
+}
+
+.checkbox:checked~.fi-rr-menu-burger {
+    display: none;
+}
+
+.checkbox:checked~.fi-rr-cross {
+    display: block;
+}
+
+.menu {
+    width: 130px;
+    position: absolute;
+    top: -250px;
+    right: 0px;
+    transition: 250ms;
+    z-index: 1;
+
+    li {
+        display: block;
+        text-align: start;
+        list-style: none;
+        font-size: 10px;
+        line-height: 20px;
+
+        a {
+            text-decoration: none;
+            background-color: #3e566f;
+            color: #ff8351;
+            display: block;
+            padding: 10px 6px;
+
+            :hover {
+                background: rgb(232, 135, 10);
+                color: rgb(240, 248, 255);
+            }
+        }
+    }
+}
+
+.checkbox:checked~.menu {
+    top: 40px;
+}
+
+/* Estes es el Main*/
+
+.main {
+    padding: 0;
+
+    .section_img {
+        .modelo_img {
+            width: 100%;
+            position: relative;
+            text-align: center;
+            padding: 0px;
+
+            .texto_img {
+                position: absolute;
+                width: 250px;
+                bottom: 1rem;
+                left: 5rem;
+                text-align: center;
+                padding: 0 auto;
+
+                h2 {
+                    position: relative;
+                    bottom: 50px;
+                    text-align: center;
+                    position: relative;
+                    color: #fff;
+                    font-size: 2.5em;
+                }
+
+                a {
+                    width: 30px;
+                    position: relative;
+                    text-align: center;
+                    left: 180px;
+                    margin: 0 auto;
+                    padding: 0 auto;
+
+                    div {
+                        position: absolute;
+                        width: 200px;
+                        bottom: 30px;
+                        right: 90px;
+                        font-size: 1em;
+                        border: 1px solid rgb(245, 237, 237);
+                        color: #cc8813;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.pagos {
+    h3 {
+        margin-left: 80px;
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    .banner {
+
+        width: 370px;
+    }
+}
+
+/* Este es el Footer*/
+
+footer {
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        flex-direction: column;
+
+        h4 {
+            color: #ff8351;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            margin-top: 1rem;
+
+            li {
+                display: inline-block;
+                text-align: start;
+                list-style: none;
+                font-size: 17px;
+                line-height: 20px;
+                margin-right: 1rem;
+                margin-bottom: 0.5rem;
+
+                a {
+                    text-decoration: none;
+                    color: #ff8351;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+
+        a {
+            margin-right: 1rem;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
+    .maps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 10%;
+
+        iframe {
+            width: 100%;
+            height: 130px;
+        }
+    }
+
+    span {
+        width: 100%;
+
+        p {
+            position: absolute;
+            left: 10%;
+            bottom: 7%;
+            margin: 0;
+            font-size: 10px;
+            width: 300px;
+            color: #fff;
+        }
+    }
+}
+
+
+
+/* Media Queris 720px*/
+
+@media screen and (min-width: 720px) {
+    .pagos {
+        h3 {
+            font-size: 50px;
+            margin-left: 9rem;
+            margin-top: 2rem;
+            color: #fff;
+        }
+
+        .banner {
+
+            width: 700px;
+        }
+    }
+}
+
+/* Arreglar footer para que sea responsive*/
+

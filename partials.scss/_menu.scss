@@ -1,0 +1,64 @@
+.checkbox,
+.icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.icon {
+    pointer-events: none;
+    font-size: 24px;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.fi-rr-cross {
+    display: none;
+}
+
+.checkbox:checked~.fi-rr-menu-burger {
+    display: none;
+}
+
+.checkbox:checked~.fi-rr-cross {
+    display: block;
+}
+
+.menu {
+    width: 130px;
+    position: absolute;
+    top: -250px;
+    right: 0px;
+    transition: 250ms;
+    z-index: 1;
+
+    li {
+        display: block;
+        text-align: start;
+        list-style: none;
+        font-size: 10px;
+        line-height: 20px;
+
+        a {
+            text-decoration: none;
+            background-color: #3e566f;
+            color: #ff8351;
+            display: block;
+            padding: 10px 6px;
+
+            :hover {
+                background: rgb(232, 135, 10);
+                color: rgb(240, 248, 255);
+            }
+        }
+    }
+}
+
+.checkbox:checked~.menu {
+    top: 40px;
+}

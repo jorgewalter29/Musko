@@ -1,0 +1,307 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100vh;
+  font-family: 'Seymour One', 'Aboreto', cursive, sans-serif; }
+
+body {
+  background-image: url(https://fondosmil.com/fondo/32202.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+/* Body */
+.grid__container {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "navbar" "main" "footer"; }
+
+header {
+  grid-area: header; }
+
+nav {
+  grid-area: navbar; }
+
+main {
+  grid-area: main;
+  padding: 20px; }
+
+footer {
+  grid-area: footer;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  /* Ajusta la altura según sea necesario */
+  background-color: #9c90dd;
+  text-align: center;
+  padding-top: 20px; }
+
+.header_container {
+  height: 40px;
+  width: 100%; }
+  .header_container nav {
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    position: relative; }
+    .header_container nav h1 {
+      color: chartreuse;
+      text-align: start;
+      position: absolute;
+      font-size: 30px;
+      padding-left: 2rem; }
+    .header_container nav p {
+      text-align: start;
+      position: absolute;
+      padding-left: 6rem;
+      top: 2.0rem;
+      font-size: 12px; }
+
+.checkbox,
+.icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+  right: 12px;
+  cursor: pointer; }
+
+.icon {
+  pointer-events: none;
+  font-size: 24px; }
+
+.checkbox {
+  opacity: 0.2; }
+
+.fi-rr-cross {
+  display: none; }
+
+.checkbox:checked ~ .fi-rr-menu-burger {
+  display: none; }
+
+.checkbox:checked ~ .fi-rr-cross {
+  display: block; }
+
+.menu {
+  width: 130px;
+  position: absolute;
+  top: -250px;
+  right: 0px;
+  transition: 250ms;
+  z-index: 1; }
+  .menu li {
+    display: block;
+    text-align: start;
+    list-style: none;
+    font-size: 10px;
+    line-height: 20px; }
+    .menu li a {
+      text-decoration: none;
+      background-color: #3e566f;
+      color: #ff8351;
+      display: block;
+      padding: 10px 6px; }
+      .menu li a :hover {
+        background: #e8870a;
+        color: aliceblue; }
+
+.checkbox:checked ~ .menu {
+  top: 40px; }
+
+main {
+  padding: 0; }
+  main section .promo_40 {
+    display: flex;
+    height: 300px;
+    width: 250px;
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    background-color: white; }
+    main section .promo_40 img {
+      width: 150px;
+      height: 100px;
+      margin-left: 50px;
+      margin-top: 1rem;
+      justify-content: center; }
+    main section .promo_40 h3 {
+      position: absolute;
+      margin-top: 115px;
+      margin-left: 100px;
+      color: #16100e; }
+    main section .promo_40 p {
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 25px;
+      width: 200px;
+      font-size: small;
+      color: #3e566f; }
+
+main section div {
+  display: block;
+  background-color: cornflowerblue;
+  width: 100vw;
+  height: 100px; }
+  main section div span {
+    color: gray;
+    display: flex;
+    justify-content: center; }
+    main section div span h2 {
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      font-size: 3em; }
+main section .promo_3 {
+  display: flex;
+  height: 300px;
+  width: 250px;
+  margin-left: 3.5rem;
+  margin-top: 2rem;
+  background-color: white; }
+  main section .promo_3 img {
+    width: 150px;
+    height: 130px;
+    margin-left: 50px;
+    margin-top: 1rem;
+    justify-content: center; }
+  main section .promo_3 h3 {
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 25px;
+    color: #16100e; }
+  main section .promo_3 p {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 25px;
+    width: 200px;
+    font-size: small;
+    color: #3e566f; }
+
+main section div {
+  display: block;
+  background-color: cornflowerblue;
+  width: 100vw;
+  height: 100px; }
+  main section div span {
+    color: gray;
+    display: flex;
+    justify-content: center; }
+    main section div span h2 {
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      font-size: 3em; }
+main section .promociones {
+  width: 100%;
+  height: 70vh; }
+main section .promo_12 {
+  display: flex;
+  height: 300px;
+  width: 250px;
+  margin-left: 3.5rem;
+  margin-top: 2rem;
+  background-color: white; }
+  main section .promo_12 img {
+    width: 150px;
+    height: 130px;
+    margin-left: 50px;
+    margin-top: 1rem;
+    justify-content: center; }
+  main section .promo_12 h3 {
+    position: absolute;
+    margin-top: 155px;
+    margin-left: 55px;
+    color: #16100e; }
+  main section .promo_12 p {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 25px;
+    width: 200px;
+    font-size: small;
+    color: #3e566f; }
+
+footer {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  flex-wrap: wrap; }
+  footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    flex-direction: column; }
+    footer div h4 {
+      color: #ff8351;
+      padding: 0; }
+    footer div ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      margin-top: 1rem; }
+      footer div ul li {
+        display: inline-block;
+        text-align: start;
+        list-style: none;
+        font-size: 17px;
+        line-height: 20px;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem; }
+        footer div ul li a {
+          text-decoration: none;
+          color: #ff8351;
+          padding-left: 10px; }
+  footer .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%; }
+    footer .logos a {
+      margin-right: 1rem; }
+      footer .logos a img {
+        width: 60px;
+        height: 60px; }
+  footer .maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%; }
+    footer .maps iframe {
+      width: 100%;
+      height: 150px; }
+  footer span {
+    width: 100%; }
+    footer span p {
+      position: absolute;
+      left: 10px;
+      bottom: 5px;
+      margin: 0;
+      font-size: 10px;
+      width: 300px;
+      color: #fff; }
+
+/*# sourceMappingURL=promociones.css.map */
