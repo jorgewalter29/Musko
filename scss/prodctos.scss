@@ -6,7 +6,6 @@
 
 html {
     font-family: 'Seymour One', sans-serif;
-    font-family: 'Aboreto', cursive;
     font-size: 62, 5%;
     height: 100vh;
 }
@@ -55,8 +54,6 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 30px;
-    /* Ajusta la altura según sea necesario */
     background-color: #9c90dd;
     text-align: center;
     padding-top: 20px;
@@ -97,7 +94,7 @@ footer {
     }
 }
 
-
+/* Menu Hamburguesa*/
 
 .checkbox,
 .icon {
@@ -116,7 +113,7 @@ footer {
 }
 
 .checkbox {
-    opacity: 1;
+    opacity: 0;
 }
 
 .fi-rr-cross {
@@ -137,7 +134,7 @@ footer {
     top: -250px;
     right: 0px;
     transition: 250ms;
-    z-index: 0;
+    z-index: 1;
 
     li {
         display: block;
@@ -166,6 +163,7 @@ footer {
     top: 40px;
 }
 
+/* Estes es el Main*/
 
 main {
     display: flex;
@@ -179,7 +177,8 @@ main {
 
 .card {
     margin: 20px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 300px;
     margin-top: 3rem;
     border-radius: 5px;
@@ -187,6 +186,13 @@ main {
     background-size: cover;
     box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
     overflow: hidden;
+}
+
+@media only screen and (min-width: 1140px) {
+    .card {
+        width: calc((100% - 60px) / 4);
+        max-width: none;
+    }
 }
 
 .content {
@@ -216,23 +222,7 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Este es el Footer*/
 
 
 footer {

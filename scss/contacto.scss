@@ -6,8 +6,7 @@
 
 html {
     height: 100vh;
-    ;
-    font-family: 'Seymour One', 'Aboreto', cursive, sans-serif;
+    font-family: 'Seymour One', sans-serif;
 }
 
 body {
@@ -51,14 +50,19 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 30px;
-    /* Ajusta la altura según sea necesario */
     background-color: #9c90dd;
     text-align: center;
     padding-top: 20px;
 }
 
+
+/* Config Header */
+
+/* Config del Navbar */
+
+
 .header_container {
+    font-family: 'Seymour One', 'Aboreto', cursive, sans-serif;
     height: 40px;
     width: 100%;
 
@@ -86,6 +90,10 @@ footer {
     }
 }
 
+
+
+/* Menu Hamburguesa*/
+
 .checkbox,
 .icon {
     position: absolute;
@@ -102,7 +110,7 @@ footer {
 }
 
 .checkbox {
-    opacity: 0.2;
+    opacity: 0;
 }
 
 .fi-rr-cross {
@@ -151,6 +159,8 @@ footer {
     top: 40px;
 }
 
+/* Formulario de contacto*/
+
 form {
     width: 450px;
     margin: auto;
@@ -195,6 +205,8 @@ form {
     }
 }
 
+
+/* Este es el Footer*/
 
 footer {
     display: flex;

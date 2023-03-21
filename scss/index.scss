@@ -5,11 +5,9 @@
 }
 
 html {
-    width: 100vw;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 62, 5%;
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: 'Seymour One', 'Aboreto', cursive, sans-serif;
 }
 
 body {
@@ -53,8 +51,6 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 30px;
-    /* Ajusta la altura según sea necesario */
     background-color: #9c90dd;
     text-align: center;
     padding-top: 20px;
@@ -68,6 +64,7 @@ footer {
 
 
 .header_container {
+    font-family: 'Seymour One', sans-serif;
     height: 40px;
     width: 100%;
 
@@ -217,13 +214,13 @@ footer {
 
 .pagos {
     h3 {
-        margin-left: 80px;
-        margin-top: 20px;
+        margin-left: 25%;
+        margin-top: 10%;
         color: #fff;
     }
 
     .banner {
-
+        margin-left: 4%;
         width: 370px;
     }
 }
@@ -311,11 +308,11 @@ footer {
         align-items: center;
         margin-right: 5%;
         margin-left: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
 
         iframe {
             width: 100%;
-            height: 130px;
+            height: 120px;
         }
     }
 
@@ -324,8 +321,8 @@ footer {
 
         p {
             position: absolute;
-            left: 10%;
-            bottom: 7%;
+            left: 10px;
+            bottom: 5px;
             margin: 0;
             font-size: 10px;
             width: 300px;
@@ -333,7 +330,6 @@ footer {
         }
     }
 }
-
 
 
 /* Media Queris 720px*/

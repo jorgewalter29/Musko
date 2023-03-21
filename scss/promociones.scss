@@ -53,13 +53,19 @@ footer {
     bottom: 0;
     width: 100%;
     height: 30px;
-    /* Ajusta la altura según sea necesario */
     background-color: #9c90dd;
     text-align: center;
     padding-top: 20px;
 }
 
+
+/* Config Header */
+
+/* Config del Navbar */
+
+
 .header_container {
+    font-family: 'Seymour One', 'Aboreto', cursive, sans-serif;
     height: 40px;
     width: 100%;
 
@@ -87,6 +93,12 @@ footer {
     }
 }
 
+
+
+/* Menu Hamburguesa*/
+
+
+
 .checkbox,
 .icon {
     position: absolute;
@@ -103,7 +115,7 @@ footer {
 }
 
 .checkbox {
-    opacity: 0.2;
+    opacity: 0;
 }
 
 .fi-rr-cross {
@@ -153,22 +165,52 @@ footer {
 }
 
 
+
+/* Estes es el Main*/
+
+
+main {
+    section {
+        div {
+            display: block;
+            background-color: cornflowerblue;
+            width: 100vw;
+            height: 100px;
+
+            span {
+                color: gray;
+                display: flex;
+                justify-content: center;
+
+                h2 {
+                    font-family: 'Times New Roman', Times, serif;
+                    margin-top: 20px;
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+
+
 main {
     padding: 0;
 
     section {
         .promo_40 {
             display: flex;
+            justify-content: center;
+            align-items: start;
             height: 300px;
             width: 250px;
-            margin-left: 3.5rem;
+            margin-left: 20%;
             margin-top: 1rem;
             background-color: white;
 
             img {
                 width: 150px;
                 height: 100px;
-                margin-left: 50px;
+                margin-left: 20px;
                 margin-top: 1rem;
                 justify-content: center;
             }
@@ -176,7 +218,7 @@ main {
             h3 {
                 position: absolute;
                 margin-top: 115px;
-                margin-left: 100px;
+                margin-left: 25px;
                 color: rgb(22, 16, 14);
 
             }
@@ -194,124 +236,182 @@ main {
 
 }
 
-main {
-    section {
-        div {
-            display: block;
-            background-color: cornflowerblue;
-            width: 100vw;
-            height: 100px;
-
-            span {
-                color: gray;
-                display: flex;
-                justify-content: center;
-
-                h2 {
-                    font-family: 'Times New Roman', Times, serif;
-                    margin-top: 20px;
-                    font-size: 3em;
-                }
-            }
-        }
-
-        .promo_3 {
+@media screen and (min-width: 768px) {
+    main {
+        section {
             display: flex;
-            height: 300px;
-            width: 250px;
-            margin-left: 3.5rem;
-            margin-top: 2rem;
-            background-color: white;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            img {
-                width: 150px;
-                height: 130px;
-                margin-left: 50px;
-                margin-top: 1rem;
-                justify-content: center;
-            }
+            .promo_40 {
+                height: 400px;
+                width: 350px;
+                margin-left: 5%;
 
-            h3 {
-                position: absolute;
-                margin-top: 175px;
-                margin-left: 25px;
-                color: rgb(22, 16, 14);
+                img {
+                    width: 250px;
+                    height: 200px;
+                }
 
-            }
+                h3 {
+                    font-size: 40px;
+                    margin-top: 195px;
+                }
 
-            p {
-                position: absolute;
-                margin-top: 220px;
-                margin-left: 25px;
-                width: 200px;
-                font-size: small;
-                color: #3e566f;
+                p {
+                    width: 300px;
+                    margin-top: 250px;
+                    font-size: 15px;
+                }
             }
         }
     }
 }
 
-main {
-    section {
-        div {
-            display: block;
-            background-color: cornflowerblue;
-            width: 100vw;
-            height: 100px;
+.promo_3 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 300px;
+    width: 250px;
+    margin-left: 20%;
+    margin-top: 2rem;
+    background-color: white;
 
-            span {
-                color: gray;
-                display: flex;
-                justify-content: center;
+    img {
+        width: 150px;
+        height: 130px;
+        margin-left: 10px;
+        margin-top: 1rem;
+        justify-content: center;
+    }
 
-                h2 {
-                    font-family: 'Times New Roman', Times, serif;
-                    margin-top: 20px;
-                    font-size: 3em;
-                }
-            }
-        }
+    h3 {
+        position: absolute;
+        margin-top: 175px;
+        margin-left: 20px;
+        color: rgb(22, 16, 14);
 
-        .promociones {
-            width: 100%;
-            height: 70vh;
-        }
+    }
 
-        .promo_12 {
+    p {
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 25px;
+        width: 200px;
+        font-size: small;
+        color: #3e566f;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        section {
             display: flex;
-            height: 300px;
-            width: 250px;
-            margin-left: 3.5rem;
-            margin-top: 2rem;
-            background-color: white;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            img {
-                width: 150px;
-                height: 130px;
-                margin-left: 50px;
-                margin-top: 1rem;
-                justify-content: center;
-            }
+            .promo_3 {
+                height: 400px;
+                width: 350px;
+                margin-left: 5%;
 
-            h3 {
-                position: absolute;
-                margin-top: 155px;
-                margin-left: 55px;
-                color: rgb(22, 16, 14);
+                img {
+                    width: 250px;
+                    height: 200px;
+                }
 
-            }
+                h3 {
+                    font-size: 35px;
+                    margin-top: 220px;
+                }
 
-            p {
-                position: absolute;
-                margin-top: 200px;
-                margin-left: 25px;
-                width: 200px;
-                font-size: small;
-                color: #3e566f;
+                p {
+                    width: 300px;
+                    margin-top: 270px;
+                    font-size: 15px;
+                }
             }
         }
     }
 }
+
+
+.promo_12 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 300px;
+    width: 250px;
+    margin-left: 20%;
+    margin-top: 2rem;
+    background-color: white;
+
+    img {
+        width: 150px;
+        height: 130px;
+        margin-left: 10px;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    h3 {
+        position: absolute;
+        margin-top: 155px;
+        margin-left: 25px;
+        color: rgb(22, 16, 14);
+
+    }
+
+    p {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 25px;
+        width: 200px;
+        font-size: small;
+        color: #3e566f;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .promo_12 {
+                height: 400px;
+                width: 350px;
+                margin-left: 5%;
+
+                img {
+                    width: 250px;
+                    height: 200px;
+                }
+
+                h3 {
+                    font-size: 40px;
+                    margin-top: 220px;
+                }
+
+                p {
+                    width: 300px;
+                    margin-top: 270px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* Este es el Footer*/
 
 footer {
     display: flex;
