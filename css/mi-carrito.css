@@ -4,20 +4,22 @@
   box-sizing: border-box; }
 
 html {
-  height: 100vh;
-  font-family: 'Seymour One', 'Aboreto', cursive, sans-serif; }
+  height: 100vh; }
 
 body {
-  background-image: url(https://fondosmil.com/fondo/32202.jpg);
+  background-image: url(../img/fondo.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-family: 'Alkatra', cursive; }
 
 /* Body */
 .grid__container {
   display: grid;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "navbar" "main" "footer"; }
 
@@ -44,26 +46,28 @@ footer {
 /* Config Header */
 /* Config del Navbar */
 .header_container {
-  font-family: 'Seymour One', sans-serif;
-  height: 40px;
-  width: 100%; }
+  height: 60px;
+  width: 100%;
+  background-color: #166ecc; }
   .header_container nav {
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: start;
     position: relative; }
     .header_container nav h1 {
-      color: chartreuse;
       text-align: start;
       position: absolute;
-      font-size: 30px;
+      font-size: 45px;
       padding-left: 2rem; }
+      .header_container nav h1 a {
+        color: #70d010;
+        text-decoration: none; }
     .header_container nav p {
       text-align: start;
       position: absolute;
       padding-left: 6rem;
-      top: 2.0rem;
-      font-size: 12px; }
+      top: 2.5rem;
+      font-size: 16px; }
 
 /* Menu Hamburguesa*/
 .checkbox,
@@ -102,7 +106,7 @@ footer {
     display: block;
     text-align: start;
     list-style: none;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px; }
     .menu li a {
       text-decoration: none;
@@ -137,7 +141,8 @@ section {
   padding: 1em; }
   section h2 {
     font-size: 1.5em;
-    margin: 0 0 0.5em; }
+    margin: 0 0 0.5em;
+    color: #fff; }
   section ul {
     margin: 0;
     padding: 0; }
@@ -170,19 +175,20 @@ section {
         box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
 
 button {
-  background-color: #333;
+  border: 1px solid #f5eded;
+  color: #ff8351;
   border-radius: 2px;
-  color: #fff;
   cursor: pointer;
   font-size: 1.2em;
-  padding: 0.5em; }
+  padding: 0.2em; }
   button:hover {
     background-color: #555; }
 
 p {
   font-size: 1.4em;
   margin-top: 1em;
-  text-align: right; }
+  text-align: right;
+  color: #fff; }
 
 /* Este es el Footer*/
 footer {

@@ -4,21 +4,24 @@
   box-sizing: border-box; }
 
 html {
-  height: 100vh;
-  font-family: 'Seymour One', 'Aboreto', cursive, sans-serif; }
+  font-size: 62,5%;
+  height: 100%;
+  width: 100%; }
 
 body {
-  background-image: url(https://fondosmil.com/fondo/32202.jpg);
-  height: 100vh;
+  background-image: url(../img/fondo.jpg);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-family: 'Alkatra', cursive; }
 
 /* Body */
 .grid__container {
   display: grid;
-  gap: 10px;
-  grid-template-rows: auto 1fr auto;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1fr;
   grid-template-areas: "header" "navbar" "main" "footer"; }
 
 header {
@@ -28,43 +31,36 @@ nav {
   grid-area: navbar; }
 
 main {
-  grid-area: main;
-  padding: 20px; }
+  grid-area: main; }
 
 footer {
-  grid-area: footer;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background-color: #9c90dd;
-  text-align: center;
-  padding-top: 20px; }
+  grid-area: footer; }
 
 /* Config Header */
 /* Config del Navbar */
 .header_container {
-  font-family: 'Seymour One', 'Aboreto', cursive, sans-serif;
-  height: 40px;
-  width: 100%; }
+  height: 60px;
+  width: 100%;
+  background-color: #166ecc; }
   .header_container nav {
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: start;
     position: relative; }
     .header_container nav h1 {
-      color: chartreuse;
       text-align: start;
       position: absolute;
-      font-size: 30px;
+      font-size: 45px;
       padding-left: 2rem; }
+      .header_container nav h1 a {
+        color: #70d010;
+        text-decoration: none; }
     .header_container nav p {
       text-align: start;
       position: absolute;
       padding-left: 6rem;
-      top: 2.0rem;
-      font-size: 12px; }
+      top: 2.5rem;
+      font-size: 16px; }
 
 /* Menu Hamburguesa*/
 .checkbox,
@@ -103,35 +99,41 @@ footer {
     display: block;
     text-align: start;
     list-style: none;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px; }
     .menu li a {
       text-decoration: none;
-      background-color: #3e566f;
+      background-color: #fff;
       color: #ff8351;
       display: block;
       padding: 10px 6px; }
-      .menu li a :hover {
-        background: #e8870a;
-        color: aliceblue; }
+      .menu li a:hover {
+        background: #166ecc;
+        color: #fff; }
 
 .checkbox:checked ~ .menu {
   top: 40px; }
 
 /* Estes es el Main*/
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh; }
+
 main section div {
   display: block;
-  background-color: cornflowerblue;
   width: 100vw;
-  height: 100px; }
+  height: 70px; }
   main section div span {
-    color: gray;
+    color: #fff;
     display: flex;
     justify-content: center; }
     main section div span h2 {
-      font-family: 'Times New Roman', Times, serif;
       margin-top: 20px;
-      font-size: 3em; }
+      font-size: 2.5em; }
 
 main {
   padding: 0; }
@@ -142,7 +144,6 @@ main {
     height: 300px;
     width: 250px;
     margin-left: 20%;
-    margin-top: 1rem;
     background-color: white; }
     main section .promo_40 img {
       width: 150px;
@@ -282,11 +283,86 @@ main {
         width: 300px;
         margin-top: 270px;
         font-size: 15px; } }
+.Newsletter {
+  display: none;
+  text-align: center;
+  justify-content: center; }
+  .Newsletter h4 {
+    font-size: 2em;
+    color: #fff; }
+  .Newsletter p {
+    font-size: 1.3em;
+    color: #fff; }
+
+.mt-4 {
+  padding: 5px; }
+
+.mt-4 [type=checkbox] + span:not(.lever) {
+  display: none;
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  padding-right: 1.5em;
+  padding-left: 5px;
+  cursor: pointer;
+  height: 25px;
+  line-height: 25px;
+  user-select: none; }
+
+button {
+  border: 1px solid #f5eded;
+  color: #ff8351;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1px; }
+  button:hover {
+    color: #fff; }
+  button p {
+    font-size: 1.4em;
+    margin-top: 1em;
+    text-align: center;
+    color: #fff; }
+
+.pagos {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem; }
+  .pagos h5 {
+    font-size: 1.5em;
+    margin-top: 5%;
+    color: #fff; }
+  .pagos ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+    .pagos ul li {
+      display: inline-block;
+      line-height: 1.25;
+      list-style: none;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      height: 40px;
+      width: 60px;
+      margin: 8px;
+      padding: 6px;
+      overflow: hidden; }
+      .pagos ul li .pog-ui-logos-list__image {
+        display: block;
+        width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .pagos h3 {
+    font-size: 50px;
+    margin-left: 9rem;
+    margin-top: 2rem;
+    color: #fff; } }
 /* Este es el Footer*/
 footer {
   display: flex;
   position: relative;
-  background-color: transparent;
+  background-color: #166ecc;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -302,9 +378,10 @@ footer {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
     flex-direction: column; }
     footer div h4 {
+      display: none;
       color: #ff8351;
       padding: 0; }
     footer div ul {
@@ -328,38 +405,58 @@ footer {
           text-decoration: none;
           color: #ff8351;
           padding-left: 10px; }
-  footer .logos {
+          footer div ul li a:hover {
+            color: #fff; }
+
+@media screen and (min-width: 768px) {
+  .menu_footer ul li {
+    font-size: 22px; } }
+.logos {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%; }
+  .logos a {
+    margin-right: 1rem; }
+    .logos a img {
+      width: 60px;
+      height: 60px; }
+
+.maps {
+  display: none;
+  justify-content: center;
+  align-items: center; }
+  .maps iframe {
+    width: 100%;
+    height: 120px; }
+
+span {
+  width: 100%; }
+  span p {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    margin: 0;
+    font-size: 10px;
+    width: 300px;
+    color: #fff; }
+
+@media screen and (min-width: 768px) {
+  .logos {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%; }
-    footer .logos a {
+    position: absolute;
+    margin: 0;
+    right: 5%; }
+    .logos a {
       margin-right: 1rem; }
-      footer .logos a img {
+      .logos a img {
         width: 60px;
         height: 60px; }
-  footer .maps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%; }
-    footer .maps iframe {
-      width: 100%;
-      height: 150px; }
-  footer span {
-    width: 100%; }
-    footer span p {
-      position: absolute;
-      left: 10px;
-      bottom: 5px;
-      margin: 0;
-      font-size: 10px;
-      width: 300px;
-      color: #fff; }
+
+  span p {
+    font-size: 11px; } }
 
 /*# sourceMappingURL=promociones.css.map */

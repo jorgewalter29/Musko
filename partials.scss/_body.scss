@@ -1,0 +1,42 @@
+body {
+    background-image: url(https://fondosmil.com/fondo/32202.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.grid__container {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #9c90dd;
+    text-align: center;
+    padding-top: 20px;
+}

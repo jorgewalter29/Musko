@@ -4,20 +4,20 @@
   box-sizing: border-box; }
 
 html {
-  height: 100vh;
-  font-family: 'Seymour One', sans-serif; }
+  height: 100vh; }
 
 body {
-  background-image: url(https://fondosmil.com/fondo/32202.jpg);
+  background-image: url(../img/fondo.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-family: 'Alkatra', cursive; }
 
 /* Body */
 .grid__container {
   display: grid;
   gap: 10px;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr;
   grid-template-areas: "header" "navbar" "main" "footer"; }
 
 header {
@@ -27,42 +27,36 @@ nav {
   grid-area: navbar; }
 
 main {
-  grid-area: main;
-  padding: 20px; }
+  grid-area: main; }
 
 footer {
-  grid-area: footer;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #9c90dd;
-  text-align: center;
-  padding-top: 20px; }
+  grid-area: footer; }
 
 /* Config Header */
 /* Config del Navbar */
 .header_container {
-  font-family: 'Seymour One', 'Aboreto', cursive, sans-serif;
-  height: 40px;
-  width: 100%; }
+  height: 60px;
+  width: 100%;
+  background-color: #166ecc; }
   .header_container nav {
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: start;
     position: relative; }
     .header_container nav h1 {
-      color: chartreuse;
       text-align: start;
       position: absolute;
-      font-size: 30px;
+      font-size: 45px;
       padding-left: 2rem; }
+      .header_container nav h1 a {
+        color: #70d010;
+        text-decoration: none; }
     .header_container nav p {
       text-align: start;
       position: absolute;
       padding-left: 6rem;
-      top: 2.0rem;
-      font-size: 12px; }
+      top: 2.5rem;
+      font-size: 16px; }
 
 /* Menu Hamburguesa*/
 .checkbox,
@@ -101,17 +95,17 @@ footer {
     display: block;
     text-align: start;
     list-style: none;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px; }
     .menu li a {
       text-decoration: none;
-      background-color: #3e566f;
+      background-color: #fff;
       color: #ff8351;
       display: block;
       padding: 10px 6px; }
-      .menu li a :hover {
-        background: #e8870a;
-        color: aliceblue; }
+      .menu li a:hover {
+        background: #166ecc;
+        color: #fff; }
 
 .checkbox:checked ~ .menu {
   top: 40px; }
@@ -144,17 +138,18 @@ form {
     max-height: 200px;
     max-width: 100%; }
   form #boton {
-    background: #31384a;
-    color: #fff;
+    background: #fff;
+    color: #ff8351;
     padding: 10px; }
-    form #boton :hover {
-      cursor: pointer; }
+    form #boton:hover {
+      color: #fff;
+      background-color: transparent; }
 
 /* Este es el Footer*/
 footer {
   display: flex;
   position: relative;
-  background-color: transparent;
+  background-color: #166ecc;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -172,7 +167,8 @@ footer {
     margin-right: 5%;
     margin-bottom: 5%;
     flex-direction: column; }
-    footer div h4 {
+    footer div h3 {
+      display: none;
       color: #ff8351;
       padding: 0; }
     footer div ul {
@@ -210,7 +206,7 @@ footer {
         width: 60px;
         height: 60px; }
   footer .maps {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin-right: 5%;

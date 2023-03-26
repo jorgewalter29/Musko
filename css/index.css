@@ -4,21 +4,22 @@
   box-sizing: border-box; }
 
 html {
-  font-family: 'Seymour One', sans-serif;
   font-size: 62, 5%;
-  height: 100vh; }
-
-body {
-  background-image: url(https://fondosmil.com/fondo/32202.jpg);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  height: 100%;
+  width: 100%; }
 
 /* Body */
+body {
+  background-image: url(../img/fondo.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Alkatra', cursive; }
+
 .grid__container {
   display: grid;
-  gap: 10px;
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  gap: 5px;
+  grid-template-rows: 1fr, auto;
   grid-template-areas: "header" "navbar" "main" "footer"; }
 
 header {
@@ -28,42 +29,36 @@ nav {
   grid-area: navbar; }
 
 main {
-  grid-area: main;
-  padding: 20px; }
+  grid-area: main; }
 
 footer {
-  grid-area: footer;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #9c90dd;
-  text-align: center;
-  padding-top: 20px; }
+  grid-area: footer; }
 
 /* Config Header */
 /* Config del Navbar */
 .header_container {
-  font-family: 'Seymour One', sans-serif;
-  height: 40px;
-  width: 100%; }
+  height: 60px;
+  width: 100%;
+  background-color: #166ecc; }
   .header_container nav {
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: start;
     position: relative; }
     .header_container nav h1 {
-      color: chartreuse;
       text-align: start;
       position: absolute;
-      font-size: 30px;
+      font-size: 45px;
       padding-left: 2rem; }
+      .header_container nav h1 a {
+        color: #70d010;
+        text-decoration: none; }
     .header_container nav p {
       text-align: start;
       position: absolute;
       padding-left: 6rem;
-      top: 2.0rem;
-      font-size: 12px; }
+      top: 2.5rem;
+      font-size: 16px; }
 
 /* Menu Hamburguesa*/
 .checkbox,
@@ -102,72 +97,173 @@ footer {
     display: block;
     text-align: start;
     list-style: none;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px; }
     .menu li a {
       text-decoration: none;
-      background-color: #3e566f;
+      background-color: #fff;
       color: #ff8351;
       display: block;
       padding: 10px 6px; }
-      .menu li a :hover {
-        background: #e8870a;
-        color: aliceblue; }
+      .menu li a:hover {
+        background: #166ecc;
+        color: #fff; }
 
 .checkbox:checked ~ .menu {
   top: 40px; }
 
 /* Estes es el Main*/
-.main {
-  padding: 0; }
+main .carousel {
+  z-index: 0; }
+main button:hover {
+  background: none; }
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 5%;
+  color: #fff;
+  background: 0 0;
+  border: 0;
+  opacity: .6;
+  transition: opacity .15s ease; }
+
+@media screen and (min-width: 768px) {
+  .carousel-item h2 {
+    font-size: 2.5em; }
+  .carousel-item p {
+    font-size: 2em; } }
+.main .section_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 10px; }
   .main .section_img .modelo_img {
     width: 100%;
     position: relative;
     text-align: center;
-    padding: 0px; }
+    padding: 10px; }
     .main .section_img .modelo_img .texto_img {
       position: absolute;
       width: 250px;
-      bottom: 1rem;
-      left: 5rem;
+      bottom: 20%;
+      left: 20%;
       text-align: center;
       padding: 0 auto; }
-      .main .section_img .modelo_img .texto_img h2 {
+      .main .section_img .modelo_img .texto_img h3 {
         position: relative;
-        bottom: 50px;
         text-align: center;
         position: relative;
         color: #fff;
         font-size: 2.5em; }
-      .main .section_img .modelo_img .texto_img a {
-        width: 30px;
-        position: relative;
-        text-align: center;
-        left: 180px;
-        margin: 0 auto;
-        padding: 0 auto; }
-        .main .section_img .modelo_img .texto_img a div {
-          position: absolute;
-          width: 200px;
-          bottom: 30px;
-          right: 90px;
-          font-size: 1em;
-          border: 1px solid #f5eded;
-          color: #cc8813; }
+      .main .section_img .modelo_img .texto_img a button {
+        height: 30px;
+        border: 1px solid #f5eded;
+        color: #ff8351;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 1.1em;
+        padding: 1px;
+        font-size: 1.3em; }
+        .main .section_img .modelo_img .texto_img a button:hover {
+          color: #fff;
+          background-color: transparent; }
 
-.pagos h3 {
-  margin-left: 25%;
-  margin-top: 10%;
-  color: #fff; }
-.pagos .banner {
-  margin-left: 4%;
-  width: 370px; }
+@media screen and (min-width: 768px) {
+  .main .section_img {
+    flex-direction: row; }
+    .main .section_img .modelo_img {
+      width: 100%; } }
+.Newsletter {
+  display: block;
+  text-align: center;
+  justify-content: center; }
+  .Newsletter h4 {
+    font-size: 2em;
+    color: #fff; }
+  .Newsletter p {
+    font-size: 1.3em;
+    color: #fff; }
 
+.mt-4 {
+  padding: 5px; }
+
+.mt-4 [type=checkbox] + span:not(.lever) {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  padding-right: 1.5em;
+  padding-left: 5px;
+  cursor: pointer;
+  height: 25px;
+  line-height: 25px;
+  user-select: none; }
+
+button {
+  border: 1px solid #f5eded;
+  color: #ff8351;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1px; }
+  button:hover {
+    color: #fff; }
+  button p {
+    font-size: 1.4em;
+    margin-top: 1em;
+    text-align: center;
+    color: #fff; }
+
+.pagos {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem; }
+  .pagos h5 {
+    font-size: 1.5em;
+    margin-top: 5%;
+    color: #fff; }
+  .pagos ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+    .pagos ul li {
+      display: inline-block;
+      line-height: 1.25;
+      list-style: none;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      height: 40px;
+      width: 60px;
+      margin: 8px;
+      padding: 6px;
+      overflow: hidden; }
+      .pagos ul li .pog-ui-logos-list__image {
+        display: block;
+        width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .pagos h3 {
+    font-size: 50px;
+    margin-left: 9rem;
+    margin-top: 2rem;
+    color: #fff; } }
 /* Este es el Footer*/
 footer {
   display: flex;
   position: relative;
-  background-color: transparent;
+  background-color: #166ecc;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -183,9 +279,10 @@ footer {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
     flex-direction: column; }
-    footer div h4 {
+    footer div h6 {
+      display: none;
       color: #ff8351;
       padding: 0; }
     footer div ul {
@@ -209,49 +306,58 @@ footer {
           text-decoration: none;
           color: #ff8351;
           padding-left: 10px; }
-  footer .logos {
+          footer div ul li a:hover {
+            color: #fff; }
+
+@media screen and (min-width: 768px) {
+  .menu_footer ul li {
+    font-size: 22px; } }
+.logos {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%; }
+  .logos a {
+    margin-right: 1rem; }
+    .logos a img {
+      width: 60px;
+      height: 60px; }
+
+.maps {
+  display: none;
+  justify-content: center;
+  align-items: center; }
+  .maps iframe {
+    width: 100%;
+    height: 120px; }
+
+span {
+  width: 100%; }
+  span p {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    margin: 0;
+    font-size: 10px;
+    width: 300px;
+    color: #fff; }
+
+@media screen and (min-width: 768px) {
+  .logos {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%; }
-    footer .logos a {
+    position: absolute;
+    margin: 0;
+    right: 5%; }
+    .logos a {
       margin-right: 1rem; }
-      footer .logos a img {
+      .logos a img {
         width: 60px;
         height: 60px; }
-  footer .maps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%; }
-    footer .maps iframe {
-      width: 100%;
-      height: 120px; }
-  footer span {
-    width: 100%; }
-    footer span p {
-      position: absolute;
-      left: 10px;
-      bottom: 5px;
-      margin: 0;
-      font-size: 10px;
-      width: 300px;
-      color: #fff; }
 
-/* Media Queris 720px*/
-@media screen and (min-width: 720px) {
-  .pagos h3 {
-    font-size: 50px;
-    margin-left: 9rem;
-    margin-top: 2rem;
-    color: #fff; }
-  .pagos .banner {
-    width: 700px; } }
-/* Arreglar footer para que sea responsive*/
+  span p {
+    font-size: 11px; } }
 
 /*# sourceMappingURL=index.css.map */

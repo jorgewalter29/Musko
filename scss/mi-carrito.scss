@@ -6,16 +6,15 @@
 
 html {
     height: 100vh;
-    ;
-    font-family: 'Seymour One', 'Aboreto', cursive, sans-serif;
 }
 
 body {
-    background-image: url(https://fondosmil.com/fondo/32202.jpg);
+    background-image: url(../img/fondo.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Alkatra', cursive;
 }
 
 
@@ -25,6 +24,8 @@ body {
 .grid__container {
     display: grid;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header"
@@ -63,30 +64,34 @@ footer {
 /* Config del Navbar */
 
 .header_container {
-    font-family: 'Seymour One', sans-serif;
-    height: 40px;
+    height: 60px;
     width: 100%;
+    background-color: #166ecc;
 
     nav {
-        height: 40px;
+        height: 60px;
         display: flex;
         justify-content: start;
         position: relative;
 
         h1 {
-            color: chartreuse;
             text-align: start;
             position: absolute;
-            font-size: 30px;
+            font-size: 45px;
             padding-left: 2rem;
+
+            a {
+                color: rgb(112, 208, 16);
+                text-decoration: none;
+            }
         }
 
         p {
             text-align: start;
             position: absolute;
             padding-left: 6rem;
-            top: 2.0rem;
-            font-size: 12px;
+            top: 2.5rem;
+            font-size: 16px;
         }
     }
 }
@@ -138,7 +143,7 @@ footer {
         display: block;
         text-align: start;
         list-style: none;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 20px;
 
         a {
@@ -185,6 +190,7 @@ section {
     h2 {
         font-size: 1.5em;
         margin: 0 0 0.5em;
+        color: #fff;
     }
 
     ul {
@@ -238,12 +244,12 @@ section {
 
 
 button {
-    background-color: #333;
+    border: 1px solid rgb(245, 237, 237);
+    color: #ff8351;
     border-radius: 2px;
-    color: #fff;
     cursor: pointer;
     font-size: 1.2em;
-    padding: 0.5em;
+    padding: 0.2em;
 
     &:hover {
         background-color: #555;
@@ -255,6 +261,7 @@ p {
     font-size: 1.4em;
     margin-top: 1em;
     text-align: right;
+    color: #fff;
 }
 
 
