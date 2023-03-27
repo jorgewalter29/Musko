@@ -50,7 +50,7 @@ main {
 
 footer {
     grid-area: footer;
-    
+
 }
 
 
@@ -168,12 +168,14 @@ footer {
 /* Estes es el Main*/
 main {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 100vh;
 }
+
+/* Este es el H2 PROMOCIONES! */
 
 main {
     section {
@@ -198,8 +200,6 @@ main {
 
 
 main {
-    padding: 0;
-
     section {
         .promo_40 {
             display: flex;
@@ -207,8 +207,10 @@ main {
             align-items: start;
             height: 300px;
             width: 250px;
-            margin-left: 20%;
+            margin-left: 15%;
+            margin-top: 2rem;
             background-color: white;
+            
 
             img {
                 width: 150px;
@@ -249,23 +251,23 @@ main {
             flex-wrap: wrap;
 
             .promo_40 {
-                height: 400px;
-                width: 350px;
+                height: 350px;
+                width: 300px;
                 margin-left: 5%;
 
                 img {
-                    width: 250px;
-                    height: 200px;
+                    width: 200px;
+                    height: 150px;
                 }
 
                 h3 {
                     font-size: 40px;
-                    margin-top: 195px;
+                    margin-top: 165px;
                 }
 
                 p {
-                    width: 300px;
-                    margin-top: 250px;
+                    width: 250px;
+                    margin-top: 210px;
                     font-size: 15px;
                 }
             }
@@ -279,7 +281,7 @@ main {
     align-items: start;
     height: 300px;
     width: 250px;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 2rem;
     background-color: white;
 
@@ -319,23 +321,26 @@ main {
             flex-wrap: wrap;
 
             .promo_3 {
-                height: 400px;
-                width: 350px;
+                height: 350px;
+                width: 300px;
                 margin-left: 5%;
 
                 img {
-                    width: 250px;
-                    height: 200px;
+                    width: 200px;
+                    height: 150px;
+                    margin-top: 30px;
                 }
 
                 h3 {
                     font-size: 35px;
-                    margin-top: 220px;
+                    margin-top: 195px;
+                    margin-left: 0;
                 }
 
                 p {
-                    width: 300px;
-                    margin-top: 270px;
+                    width: 250px;
+                    margin-top: 250px;
+                    margin-left: 10px;
                     font-size: 15px;
                 }
             }
@@ -350,7 +355,7 @@ main {
     align-items: start;
     height: 300px;
     width: 250px;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 2rem;
     background-color: white;
 
@@ -390,23 +395,26 @@ main {
             flex-wrap: wrap;
 
             .promo_12 {
-                height: 400px;
-                width: 350px;
+                height: 350px;
+                width: 300px;
                 margin-left: 5%;
 
                 img {
-                    width: 250px;
-                    height: 200px;
+                    width: 200px;
+                    height: 150px;
+                    margin-top: 30px;
                 }
 
                 h3 {
-                    font-size: 40px;
-                    margin-top: 220px;
+                    font-size: 35px;
+                    margin-top: 195px;
+                    margin-left: 0;
                 }
 
                 p {
-                    width: 300px;
-                    margin-top: 270px;
+                    width: 250px;
+                    margin-top: 250px;
+                    margin-left: 10px;
                     font-size: 15px;
                 }
             }
@@ -418,111 +426,6 @@ main {
 
 .Newsletter {
     display: none;
-    text-align: center;
-    justify-content: center;
-
-    h4 {
-        font-size: 2em;
-        color: #fff;
-    }
-
-    p {
-        font-size: 1.3em;
-        color: #fff;
-    }
-}
-
-.mt-4 {
-    padding: 5px;
-}
-
-.mt-4 [type=checkbox]+span:not(.lever) {
-    display: none;
-    position: relative;
-    color: #fff;
-    font-size: 1em;
-    padding-right: 1.5em;
-    padding-left: 5px;
-    cursor: pointer;
-    height: 25px;
-    line-height: 25px;
-    user-select: none;
-}
-
-
-button {
-    border: 1px solid rgb(245, 237, 237);
-    color: #ff8351;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 1px;
-
-    &:hover {
-        color: #fff;
-    }
-
-    p {
-        font-size: 1.4em;
-        margin-top: 1em;
-        text-align: center;
-        color: #fff;
-    }
-}
-
-
-
-
-.pagos {
-    display: block;
-    text-align: center;
-    margin-bottom: 1rem;
-
-    h5 {
-        font-size: 1.5em;
-        margin-top: 5%;
-        color: #fff;
-    }
-
-    ul {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-
-        li {
-            display: inline-block;
-            line-height: 1.25;
-            list-style: none;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            height: 40px;
-            width: 60px;
-            margin: 8px;
-            padding: 6px;
-            overflow: hidden;
-
-            .pog-ui-logos-list__image {
-                display: block;
-                width: 100%;
-
-            }
-        }
-    }
-}
-
-
-
-
-@media screen and (min-width: 768px) {
-    .pagos {
-        h3 {
-            font-size: 50px;
-            margin-left: 9rem;
-            margin-top: 2rem;
-            color: #fff;
-        }
-    }
 }
 
 
@@ -553,7 +456,7 @@ footer {
         margin-bottom: 20px;
         flex-direction: column;
 
-        h4 {
+        h6 {
             display: none;
             color: #ff8351;
             padding: 0;
@@ -592,6 +495,7 @@ footer {
     }
 }
 
+
 @media screen and (min-width: 768px) {
     .menu_footer {
         ul {
@@ -626,10 +530,13 @@ footer {
     display: none;
     justify-content: center;
     align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 
     iframe {
         width: 100%;
-        height: 120px;
+        height: 150px;
     }
 }
 
@@ -646,8 +553,6 @@ span {
         color: #fff;
     }
 }
-
-
 
 @media screen and (min-width: 768px) {
     .logos {

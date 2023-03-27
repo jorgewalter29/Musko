@@ -24,9 +24,7 @@ body {
 .grid__container {
     display: grid;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr;
     grid-template-areas:
         "header"
         "navbar"
@@ -49,13 +47,6 @@ main {
 
 footer {
     grid-area: footer;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #9c90dd;
-    text-align: center;
-    padding-top: 20px;
 }
 
 
@@ -148,14 +139,14 @@ footer {
 
         a {
             text-decoration: none;
-            background-color: #3e566f;
+            background-color: #fff;
             color: #ff8351;
             display: block;
             padding: 10px 6px;
 
-            :hover {
-                background: rgb(232, 135, 10);
-                color: rgb(240, 248, 255);
+            &:hover {
+                background: #166ecc;
+                color: #fff;
             }
         }
     }
@@ -252,25 +243,168 @@ button {
     padding: 0.2em;
 
     &:hover {
-        background-color: #555;
+        background-color: transparent;
+        color: #fff;
+        ;
+    }
+}
+
+main {
+    p {
+        font-size: 1.4em;
+        margin-top: 1em;
+        text-align: right;
+        color: #fff;
     }
 }
 
 
-p {
-    font-size: 1.4em;
-    margin-top: 1em;
-    text-align: right;
-    color: #fff;
+
+.Newsletter {
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+    h4 {
+        font-size: 2em;
+        color: #fff;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.3em;
+        color: #fff;
+    }
 }
 
+.mt-4 {
+    padding: 5px;
+}
+
+.mt-4 [type=checkbox]+span:not(.lever) {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    padding-right: 1.5em;
+    padding-left: 5px;
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    user-select: none;
+}
+
+
+button {
+    border: 1px solid rgb(245, 237, 237);
+    color: #ff8351;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 1px;
+
+    &:hover {
+        color: #fff;
+    }
+
+    p {
+        font-size: 1.4em;
+        margin-top: 1em;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+
+
+
+.pagos {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    h5 {
+        font-size: 1.5em;
+        margin-top: 5%;
+        color: #fff;
+    }
+
+    ul {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            line-height: 1.25;
+            list-style: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            height: 40px;
+            width: 60px;
+            margin: 8px;
+            padding: 6px;
+            overflow: hidden;
+
+            .pog-ui-logos-list__image {
+                display: block;
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .Newsletter {
+        p {
+            text-align: center;
+            position: relative;
+
+        }
+    }
+
+    .mt-4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pagos {
+        width: 500px;
+        margin-left: 15%;
+
+        h5 {
+            font-size: 30px;
+            margin-left: 1rem;
+            margin-top: 2rem;
+            color: #fff;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .pagos {
+        h5 {
+            margin-left: 5rem;
+        }
+        ul {
+            margin-left: 20%;
+        }
+    }
+}
 
 /* Este es el Footer*/
 
 footer {
     display: flex;
-    position: relative;
-    background-color: transparent;
+    position: static;
+    background-color: #166ecc;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -287,10 +421,11 @@ footer {
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 0;
         flex-direction: column;
 
-        h4 {
+        h3 {
+            display: none;
             color: #ff8351;
             padding: 0;
         }
@@ -318,19 +453,81 @@ footer {
                     text-decoration: none;
                     color: #ff8351;
                     padding-left: 10px;
+
+                    &:hover {
+                        color: #fff;
+                    }
                 }
             }
         }
     }
+}
 
+
+@media screen and (min-width: 768px) {
+    .menu_footer {
+        ul {
+            li {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+
+.logos {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+    a {
+        margin-right: 1rem;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+.maps {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+    iframe {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+span {
+    width: 100%;
+
+    p {
+        position: static;
+        left: 10px;
+        bottom: 5px;
+        margin: 0;
+        font-size: 10px;
+        width: 300px;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .logos {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-right: 5%;
-        margin-left: 5%;
-        margin-bottom: 5%;
+        position: absolute;
+        margin: 0;
+        right: 5%;
 
         a {
             margin-right: 1rem;
@@ -342,31 +539,9 @@ footer {
         }
     }
 
-    .maps {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 5%;
-        margin-left: 5%;
-        margin-bottom: 5%;
-
-        iframe {
-            width: 100%;
-            height: 150px;
-        }
-    }
-
     span {
-        width: 100%;
-
         p {
-            position: absolute;
-            left: 10px;
-            bottom: 5px;
-            margin: 0;
-            font-size: 10px;
-            width: 300px;
-            color: #fff;
+            font-size: 11px;
         }
     }
 }

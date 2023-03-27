@@ -117,12 +117,13 @@ footer {
 /* Estes es el Main*/
 main {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 100vh; }
 
+/* Este es el H2 PROMOCIONES! */
 main section div {
   display: block;
   width: 100vw;
@@ -135,34 +136,33 @@ main section div {
       margin-top: 20px;
       font-size: 2.5em; }
 
-main {
-  padding: 0; }
-  main section .promo_40 {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    height: 300px;
-    width: 250px;
-    margin-left: 20%;
-    background-color: white; }
-    main section .promo_40 img {
-      width: 150px;
-      height: 100px;
-      margin-left: 20px;
-      margin-top: 1rem;
-      justify-content: center; }
-    main section .promo_40 h3 {
-      position: absolute;
-      margin-top: 115px;
-      margin-left: 25px;
-      color: #16100e; }
-    main section .promo_40 p {
-      position: absolute;
-      margin-top: 150px;
-      margin-left: 25px;
-      width: 200px;
-      font-size: small;
-      color: #3e566f; }
+main section .promo_40 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 300px;
+  width: 250px;
+  margin-left: 15%;
+  margin-top: 2rem;
+  background-color: white; }
+  main section .promo_40 img {
+    width: 150px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 1rem;
+    justify-content: center; }
+  main section .promo_40 h3 {
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 25px;
+    color: #16100e; }
+  main section .promo_40 p {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 25px;
+    width: 200px;
+    font-size: small;
+    color: #3e566f; }
 
 @media screen and (min-width: 768px) {
   main section {
@@ -172,18 +172,18 @@ main {
     flex-direction: row;
     flex-wrap: wrap; }
     main section .promo_40 {
-      height: 400px;
-      width: 350px;
+      height: 350px;
+      width: 300px;
       margin-left: 5%; }
       main section .promo_40 img {
-        width: 250px;
-        height: 200px; }
+        width: 200px;
+        height: 150px; }
       main section .promo_40 h3 {
         font-size: 40px;
-        margin-top: 195px; }
+        margin-top: 165px; }
       main section .promo_40 p {
-        width: 300px;
-        margin-top: 250px;
+        width: 250px;
+        margin-top: 210px;
         font-size: 15px; } }
 .promo_3 {
   display: flex;
@@ -191,7 +191,7 @@ main {
   align-items: start;
   height: 300px;
   width: 250px;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: 2rem;
   background-color: white; }
   .promo_3 img {
@@ -221,18 +221,21 @@ main {
     flex-direction: row;
     flex-wrap: wrap; }
     main section .promo_3 {
-      height: 400px;
-      width: 350px;
+      height: 350px;
+      width: 300px;
       margin-left: 5%; }
       main section .promo_3 img {
-        width: 250px;
-        height: 200px; }
+        width: 200px;
+        height: 150px;
+        margin-top: 30px; }
       main section .promo_3 h3 {
         font-size: 35px;
-        margin-top: 220px; }
+        margin-top: 195px;
+        margin-left: 0; }
       main section .promo_3 p {
-        width: 300px;
-        margin-top: 270px;
+        width: 250px;
+        margin-top: 250px;
+        margin-left: 10px;
         font-size: 15px; } }
 .promo_12 {
   display: flex;
@@ -240,7 +243,7 @@ main {
   align-items: start;
   height: 300px;
   width: 250px;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: 2rem;
   background-color: white; }
   .promo_12 img {
@@ -270,94 +273,25 @@ main {
     flex-direction: row;
     flex-wrap: wrap; }
     main section .promo_12 {
-      height: 400px;
-      width: 350px;
+      height: 350px;
+      width: 300px;
       margin-left: 5%; }
       main section .promo_12 img {
-        width: 250px;
-        height: 200px; }
+        width: 200px;
+        height: 150px;
+        margin-top: 30px; }
       main section .promo_12 h3 {
-        font-size: 40px;
-        margin-top: 220px; }
+        font-size: 35px;
+        margin-top: 195px;
+        margin-left: 0; }
       main section .promo_12 p {
-        width: 300px;
-        margin-top: 270px;
+        width: 250px;
+        margin-top: 250px;
+        margin-left: 10px;
         font-size: 15px; } }
 .Newsletter {
-  display: none;
-  text-align: center;
-  justify-content: center; }
-  .Newsletter h4 {
-    font-size: 2em;
-    color: #fff; }
-  .Newsletter p {
-    font-size: 1.3em;
-    color: #fff; }
+  display: none; }
 
-.mt-4 {
-  padding: 5px; }
-
-.mt-4 [type=checkbox] + span:not(.lever) {
-  display: none;
-  position: relative;
-  color: #fff;
-  font-size: 1em;
-  padding-right: 1.5em;
-  padding-left: 5px;
-  cursor: pointer;
-  height: 25px;
-  line-height: 25px;
-  user-select: none; }
-
-button {
-  border: 1px solid #f5eded;
-  color: #ff8351;
-  border-radius: 2px;
-  cursor: pointer;
-  font-size: 1em;
-  padding: 1px; }
-  button:hover {
-    color: #fff; }
-  button p {
-    font-size: 1.4em;
-    margin-top: 1em;
-    text-align: center;
-    color: #fff; }
-
-.pagos {
-  display: block;
-  text-align: center;
-  margin-bottom: 1rem; }
-  .pagos h5 {
-    font-size: 1.5em;
-    margin-top: 5%;
-    color: #fff; }
-  .pagos ul {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; }
-    .pagos ul li {
-      display: inline-block;
-      line-height: 1.25;
-      list-style: none;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      height: 40px;
-      width: 60px;
-      margin: 8px;
-      padding: 6px;
-      overflow: hidden; }
-      .pagos ul li .pog-ui-logos-list__image {
-        display: block;
-        width: 100%; }
-
-@media screen and (min-width: 768px) {
-  .pagos h3 {
-    font-size: 50px;
-    margin-left: 9rem;
-    margin-top: 2rem;
-    color: #fff; } }
 /* Este es el Footer*/
 footer {
   display: flex;
@@ -380,7 +314,7 @@ footer {
     margin-right: 5%;
     margin-bottom: 20px;
     flex-direction: column; }
-    footer div h4 {
+    footer div h6 {
       display: none;
       color: #ff8351;
       padding: 0; }
@@ -428,10 +362,13 @@ footer {
 .maps {
   display: none;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%; }
   .maps iframe {
     width: 100%;
-    height: 120px; }
+    height: 150px; }
 
 span {
   width: 100%; }
