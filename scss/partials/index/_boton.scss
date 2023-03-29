@@ -1,0 +1,19 @@
+button {
+    border: 1px solid rgb(245, 237, 237);
+    color: #ff8351;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 1px;
+
+    &:hover {
+        color: #fff;
+    }
+
+    p {
+        font-size: 1.4em;
+        margin-top: 1em;
+        text-align: center;
+        color: #fff;
+    }
+}

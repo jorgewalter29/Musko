@@ -1,0 +1,223 @@
+.promos {
+    .productos {
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80vw;
+            height: 70px;
+
+            span {
+                color: #fff;
+                display: flex;
+                justify-content: center;
+
+                h2 {
+                    display: block;
+                    margin-top: 20px;
+                    font-size: 2.5em;
+                }
+            }
+        }
+
+        .promo_40 {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            height: 300px;
+            width: 250px;
+            margin-top: 2rem;
+            background-color: white;
+            margin-left: 5%;
+
+
+            img {
+                width: 150px;
+                height: 100px;
+                
+                margin-top: 1rem;
+                justify-content: center;
+            }
+
+            h3 {
+                position: absolute;
+                margin-top: 115px;
+                
+                color: rgb(22, 16, 14);
+
+            }
+
+            p {
+                position: absolute;
+                margin-top: 150px;
+                margin-left: 15px;
+                width: 200px;
+                font-size: small;
+                color: #3e566f;
+            }
+        }
+
+        .promo_3 {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            height: 300px;
+            width: 250px;
+            margin-left: 5%;
+            
+            margin-top: 2rem;
+            background-color: white;
+
+            img {
+                width: 150px;
+                height: 130px;
+                margin-left: 10px;
+                margin-top: 1rem;
+                justify-content: center;
+            }
+
+            h3 {
+                position: absolute;
+                margin-top: 175px;
+                margin-left: 20px;
+                color: rgb(22, 16, 14);
+
+            }
+
+            p {
+                position: absolute;
+                margin-top: 220px;
+                margin-left: 25px;
+                width: 200px;
+                font-size: small;
+                color: #3e566f;
+            }
+        }
+
+        .promo_12 {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            height: 300px;
+            width: 250px;
+            margin-left: 5%;
+            
+            margin-top: 2rem;
+            background-color: white;
+
+            img {
+                width: 150px;
+                height: 130px;
+                margin-left: 10px;
+                margin-top: 1rem;
+                justify-content: center;
+            }
+
+            h3 {
+                position: absolute;
+                margin-top: 155px;
+                margin-left: 25px;
+                color: rgb(22, 16, 14);
+
+            }
+
+            p {
+                position: absolute;
+                margin-top: 200px;
+                margin-left: 25px;
+                width: 200px;
+                font-size: small;
+                color: #3e566f;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .promos {
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .promo_40 {
+                height: 350px;
+                width: 300px;
+                margin-left: 5%;
+
+                img {
+                    width: 200px;
+                    height: 150px;
+                }
+
+                h3 {
+                    font-size: 40px;
+                    margin-top: 165px;
+                }
+
+                p {
+                    width: 250px;
+                    margin-top: 210px;
+                    font-size: 15px;
+                }
+            }
+
+            .promo_3 {
+                height: 350px;
+                width: 300px;
+                margin-left: 5%;
+
+                img {
+                    width: 200px;
+                    height: 150px;
+                    margin-top: 30px;
+                }
+
+                h3 {
+                    font-size: 30px;
+                    margin-top: 195px;
+                    margin-left: 0;
+                }
+
+                p {
+                    width: 250px;
+                    margin-top: 250px;
+                    margin-left: 10px;
+                    font-size: 15px;
+                }
+            }
+
+            .promo_12 {
+                height: 350px;
+                width: 300px;
+                margin-left: 5%;
+
+                img {
+                    width: 200px;
+                    height: 150px;
+                    margin-top: 30px;
+                }
+
+                h3 {
+                    font-size: 35px;
+                    margin-top: 195px;
+                    margin-left: 0;
+                }
+
+                p {
+                    width: 250px;
+                    margin-top: 250px;
+                    margin-left: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+.Newsletter {
+    display: none;
+}

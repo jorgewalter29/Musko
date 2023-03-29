@@ -1,0 +1,11 @@
+.productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 90%;
+    margin-left: 4.5%;
+    padding: 0;
+}

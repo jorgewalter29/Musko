@@ -1,0 +1,121 @@
+.Newsletter {
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+    h4 {
+        font-size: 2em;
+        color: #fff;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.3em;
+        color: #fff;
+    }
+}
+
+.mt-4 {
+    padding: 5px;
+}
+
+.mt-4 [type=checkbox]+span:not(.lever) {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    padding-right: 1.5em;
+    padding-left: 5px;
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    user-select: none;
+}
+
+
+
+
+
+
+
+.pagos {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    h5 {
+        font-size: 1.5em;
+        margin-top: 5%;
+        color: #fff;
+    }
+
+    ul {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            line-height: 1.25;
+            list-style: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            height: 40px;
+            width: 60px;
+            margin: 8px;
+            padding: 6px;
+            overflow: hidden;
+
+            .pog-ui-logos-list__image {
+                display: block;
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .Newsletter {
+        p {
+            text-align: center;
+            position: relative;
+
+        }
+    }
+
+    .mt-4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pagos {
+        width: 500px;
+        margin-left: 15%;
+
+        h5 {
+            font-size: 30px;
+            margin-left: 1rem;
+            margin-top: 2rem;
+            color: #fff;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .pagos {
+        h5 {
+            margin-left: 5rem;
+        }
+
+        ul {
+            margin-left: 20%;
+        }
+    }
+}

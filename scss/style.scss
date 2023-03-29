@@ -1,0 +1,38 @@
+@import './partials/globales/estilos-globales';
+
+
+
+
+/* Index- Pag de Inico */
+@import './partials/index/carousel';
+@import './partials/index/section-img';
+@import './partials/index/newsletter';
+@import './partials/index/boton';
+@import './partials/index/pagos';
+
+/* Productos */
+
+@import './partials/productos/main';
+@import './partials/productos/card';
+
+
+/* Promociones */
+
+@import './partials/promociones/promos';
+@import './partials/productos/footer';
+
+
+
+/* Contacto */
+
+@import './partials/contacto/formulario';
+
+
+
+/* Mi Carrito */
+
+@import './partials/_mi-carrito.scss/main';
+@import './partials/_mi-carrito.scss/card-comprar';
+@import './partials/index/newsletter';
+
+@import './partials/productos/footer';

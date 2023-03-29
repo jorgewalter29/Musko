@@ -1,0 +1,61 @@
+section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    flex: 1 1 300px;
+    padding: 1em;
+    margin: 1em;
+
+    h2 {
+        font-size: 1.5em;
+        margin: 0 0 0.5em;
+        color: #fff;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .img_compra {
+        width: 100%;
+        max-width: 200px;
+        margin-left: 12%;
+    }
+}
+
+
+
+#products ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        a {
+            padding: 5px;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 600ms;
+            }
+
+            img {
+                width: 100%;
+                height: 150px;
+                max-width: 100px;
+                box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+            }
+        }
+    }
+}

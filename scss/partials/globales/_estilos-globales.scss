@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62, 5%;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Body */
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Alkatra', cursive;
+}
+
+
+.grid__container {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr, auto;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+main {
+    grid-area: main;
+
+}
+
+footer {
+    grid-area: footer;
+
+}
+
+
+/* Config Header */
+
+/* Config del Navbar */
+
+
+
+.header_container {
+    height: 60px;
+    width: 100%;
+    background-color: #166ecc;
+
+    nav {
+        height: 60px;
+        display: flex;
+        justify-content: start;
+        position: relative;
+
+        h1 {
+            text-align: start;
+            position: absolute;
+            font-size: 45px;
+            padding-left: 2rem;
+
+            a {
+                color: rgb(112, 208, 16);
+                text-decoration: none;
+            }
+        }
+
+        p {
+            text-align: start;
+            position: absolute;
+            padding-left: 6rem;
+            top: 2.5rem;
+            font-size: 16px;
+        }
+    }
+}
+
+/* Menu Hamburguesa*/
+
+.checkbox,
+.icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.icon {
+    pointer-events: none;
+    font-size: 24px;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.fi-rr-cross {
+    display: none;
+}
+
+.checkbox:checked~.fi-rr-menu-burger {
+    display: none;
+}
+
+.checkbox:checked~.fi-rr-cross {
+    display: block;
+}
+
+.menu {
+    width: 130px;
+    position: absolute;
+    top: -250px;
+    right: 0px;
+    transition: 250ms;
+    z-index: 1;
+
+    li {
+        display: block;
+        text-align: start;
+        list-style: none;
+        font-size: 14px;
+        line-height: 20px;
+
+        a {
+            text-decoration: none;
+            background-color: #fff;
+            color: #ff8351;
+            display: block;
+            padding: 10px 6px;
+
+            &:hover {
+                background: #166ecc;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.checkbox:checked~.menu {
+    top: 40px;
+}
+

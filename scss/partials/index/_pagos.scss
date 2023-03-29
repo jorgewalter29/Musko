@@ -1,0 +1,49 @@
+.pagos {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    h5 {
+        font-size: 1.5em;
+        margin-top: 5%;
+        color: #fff;
+    }
+
+    ul {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            line-height: 1.25;
+            list-style: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            height: 40px;
+            width: 60px;
+            margin: 8px;
+            padding: 6px;
+            overflow: hidden;
+
+            .pog-ui-logos-list__image {
+                display: block;
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .pagos {
+        h3 {
+            font-size: 50px;
+            margin-left: 9rem;
+            margin-top: 2rem;
+            color: #fff;
+        }
+    }
+}
