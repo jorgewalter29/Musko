@@ -185,9 +185,9 @@ main button:hover {
     .main .section_img .modelo_img {
       width: 100%; } }
 .Newsletter {
+  max-width: 100%;
   display: block;
-  text-align: center;
-  justify-content: center; }
+  text-align: center; }
   .Newsletter h4 {
     font-size: 2em;
     color: #fff; }
@@ -468,7 +468,7 @@ a {
   flex-wrap: wrap;
   min-height: 95vh; }
   .contacto form {
-    width: 450px;
+    max-width: 100%;
     margin: auto;
     background: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
@@ -515,15 +515,40 @@ a {
 @media screen and (min-width: 768px) {
   main {
     align-items: center; } }
+.Newsletter {
+  max-width: 100%;
+  display: block;
+  text-align: center; }
+  .Newsletter h4 {
+    font-size: 2em;
+    color: #fff; }
+  .Newsletter p {
+    font-size: 1.3em;
+    color: #fff; }
+
+.mt-4 {
+  padding: 5px; }
+
+.mt-4 [type=checkbox] + span:not(.lever) {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  padding-right: 1.5em;
+  padding-left: 5px;
+  cursor: pointer;
+  height: 25px;
+  line-height: 25px;
+  user-select: none; }
+
 /* Mi Carrito */
 .carrito {
   max-width: 1000px;
-  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  padding: 2em; }
+  padding: 0; }
 
 section {
   border: 1px solid #ccc;
@@ -568,9 +593,9 @@ section {
         box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
 
 .Newsletter {
+  max-width: 100%;
   display: block;
-  text-align: center;
-  justify-content: center; }
+  text-align: center; }
   .Newsletter h4 {
     font-size: 2em;
     color: #fff; }
